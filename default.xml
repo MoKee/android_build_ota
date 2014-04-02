@@ -30,6 +30,4 @@
   <project name="MoKee/android_device_motorola_spyder" path="device/motorola/spyder" remote="mokee" />
   <project name="MoKee/android_device_motorola_umts_spyder" path="device/motorola/umts_spyder" remote="mokee" />
 
-  <project path="vendor/mk" name="MoKee/android_vendor_mk" />
-
 </manifest>
