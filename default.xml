@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="mokee"
+           fetch=".."
+           review="review.mfunz.com" />
+
+  <default
+           revision="refs/heads/kk_mkt"
+           remote="mokee"
+           sync-c="true"
+           sync-j="4" />
+
+  <project path="build" name="MoKee/android_build" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <copyfile src="build-script" dest="mk" />
+  </project>
+
+  <project name="MoKee/android_device_samsung_aries-common" path="device/samsung/aries-common" remote="mokee" />
+  <project name="MoKee/android_device_samsung_d2lte" path="device/samsung/d2lte" remote="mokee" />
+  <project name="MoKee/android_device_samsung_galaxysmtd" path="device/samsung/galaxysmtd" remote="mokee" />
+  <project name="MoKee/android_device_samsung_hlte" path="device/samsung/hlte" remote="mokee" />
+  <project name="MoKee/android_device_samsung_jflte" path="device/samsung/jflte" remote="mokee" />
+
+  <project name="MoKee/android_device_motorola_edison" path="device/motorola/edison" remote="mokee" />
+  <project name="MoKee/android_device_motorola_falcon" path="device/motorola/falcon" remote="mokee" />
+  <project name="MoKee/android_device_motorola_msm8960-common" path="device/motorola/msm8960-common" remote="mokee" />
+  <project name="MoKee/android_device_motorola_msm8960dt-common" path="device/motorola/msm8960dt-common" remote="mokee" />
+  <project name="MoKee/android_device_motorola_omap4-common" path="device/motorola/omap4-common" remote="mokee" />
+  <project name="MoKee/android_device_motorola_spyder" path="device/motorola/spyder" remote="mokee" />
+  <project name="MoKee/android_device_motorola_umts_spyder" path="device/motorola/umts_spyder" remote="mokee" />
+
+  <project path="vendor/mk" name="MoKee/android_vendor_mk" />
+
+</manifest>
